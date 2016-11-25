@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pop_id"
+    android:gravity="left"
+    android:layout_gravity="left">
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/pop_bg"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/pop_tv_orgnization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textview_Medium_Size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:background="@drawable/app_while_tv_bg"
+            android:text="机构"/>
+
+        <TextView
+            android:id="@+id/pop_tv_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textview_Medium_Size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:background="@drawable/app_while_tv_bg"
+            android:text="学校"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/syllabuslist_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/app_while_tv_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/syllabuslist_rl_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/syllabuslist_rl_right">
+
+            <ImageView
+                android:id="@+id/syllabuslist_img_head"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/syllabuslist_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/syllabuslist_img_head"
+                android:layout_toRightOf="@+id/syllabuslist_img_head"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/syllabuslist_tv_bigandsmallname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/syllabuslist_tv_name"
+                android:layout_toRightOf="@+id/syllabuslist_tv_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_size_more" />
+
+            <TextView
+                android:id="@+id/syllabuslist_tv_time"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/syllabuslist_img_head"
+                android:layout_alignLeft="@+id/syllabuslist_tv_name"
+                android:layout_alignStart="@+id/syllabuslist_tv_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/syllabuslist_img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/syllabuslist_rl_right"
+            android:background="@mipmap/jilu"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/syllabuslist_rl_right"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:id="@+id/syllabuslist_rl_callname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/syllabuslist_btn_callname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_syllabus_btn_bg_green"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="补点名"
+                    android:textColor="@color/syllabus_btn_bg_green"
+                    android:textSize="@dimen/small_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/syllabuslist_rl_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/syllabuslist_rl_callname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/syllabuslist_btn_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_syllabus_btn_bg_pink"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="评分"
+                    android:textColor="@color/syllabus_btn_bg_pink"
+                    android:textSize="@dimen/small_size" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/syllabuslist_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/syllabuslist_rl_grade"
+                android:background="@drawable/shape_syllabus_btn_bg_yellow"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="签到"
+                android:textColor="@color/syllabus_btn_bg_yellow"
+                android:textSize="@dimen/small_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/syllabuslist_tv_type"
+                style="@style/Textview_Medium_Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/syllabuslist_rl_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/syllabuslist_tv_classteacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp"
+                    android:text="代课"
+                    android:textColor="@color/syllabus_btn_bg_red"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/syllabuslist_tv_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="请假"
+                    android:textColor="@color/syllabus_btn_bg_gary"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/syllabuslist_rl_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/syllabuslist_tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="取消预约"
+                    android:textColor="@color/syllabus_btn_bg_gary"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green">
+
+        <ImageButton
+            android:id="@+id/callname_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/translucent_background"
+            android:padding="10dp"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:id="@+id/callname_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="点名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/callname_tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:text="选中提交已到学生"
+        android:textColor="@color/red"
+        android:textSize="@dimen/medium_size" />
+
+    <GridView
+        android:id="@+id/callname_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp" />
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Textview_Medium_Size"-->
+        <!--android:text="课程说明"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--/>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/background"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试学人群"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/gray_hint"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/classdetailsthree_tv_suitcrowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/black"
+            android:minHeight="25dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教学目标"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/gray_hint"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/classdetailsthree_tv_teachingobjectives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/black"
+            android:minHeight="25dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退班规则"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/gray_hint"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/classdetailsthree_tv_exitclassrule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/black"
+            android:minHeight="25dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="插班规则"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/gray_hint"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/classdetailsthree_tv_insertclassrule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/black"
+            android:minHeight="25dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>

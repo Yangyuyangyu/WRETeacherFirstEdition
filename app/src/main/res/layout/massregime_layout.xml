@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/massregime_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@color/translucent_background"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:id="@+id/massregime_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="社团管理制度"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/massregime_tv_contenttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Textview_Medium_Size"/>
+
+            <TextView
+                android:id="@+id/massregime_tv_contenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_size"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/gray_hint"
+                />
+
+        <!--<TextView
+            android:id="@+id/massregimet_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size"
+            />-->
+
+        <WebView
+            android:id="@+id/massregimet_wv_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>

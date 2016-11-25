@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wr_education">
+
+    <!-- 获取通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <!-- Tab主页面 -->
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/school"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+
+
+        <!-- 测试页面 -->
+        <activity
+            android:name=".activity.TestActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 开始页面 -->
+        <activity
+            android:name=".activity.StartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 启动页面 -->
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录页面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 注册页面 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 找回密码页面 -->
+        <activity
+            android:name=".activity.FindPassWorldAcitvity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 教育经历页面 -->
+        <activity
+            android:name=".activity.EducationExperienceActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 成果分享页面 -->
+        <activity
+            android:name=".activity.ShareFruitActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 意见反馈页面 -->
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 个人资料页面 -->
+        <activity
+            android:name=".activity.PersonDataActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 设置页面 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 我的消息页面 -->
+        <activity
+            android:name=".activity.MyMessageActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 添加机构页面 -->
+        <activity
+            android:name=".activity.OrganizationAddActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 机构主页 -->
+        <activity
+            android:name=".activity.OrganizationHomeActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 社团详情页 -->
+        <activity
+            android:name=".activity.MassDetailsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 社团活动内容页 -->
+        <activity
+            android:name=".activity.MassContentActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 社团管理制度页面 -->
+        <activity
+            android:name=".activity.MassRegimetActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 课程规划页面 -->
+        <activity
+            android:name=".activity.CoursePlanActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 社团建设表 -->
+        <activity
+            android:name=".activity.MassBuidActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 课程提交报告页面 -->
+        <activity
+            android:name=".activity.CommitReportActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- 课堂点名页面 -->
+        <activity
+            android:name=".activity.CallNameActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 请假页面 -->
+        <activity
+            android:name=".activity.LeaveActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 代课页面 -->
+        <activity
+            android:name=".activity.AbsentTeacherActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- 课程详情页 -->
+        <activity
+            android:name=".activity.ClassDetailsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 头像弹窗页面 -->
+        <activity
+            android:name=".activity.HeadPortratitActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyleBottom"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 相册选择界面 -->
+        <activity
+            android:name=".activity.AlbumActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 这个是用于进行图片浏览时的界面 -->
+        <activity
+            android:name=".activity.GalleryActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 相册选择界面 -->
+        <activity
+            android:name=".activity.ImageFile"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 相册选择界面 -->
+        <activity
+            android:name=".activity.ShowAllPhoto"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 评分选择学生界面 -->
+        <activity
+            android:name=".activity.StudentGradeActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 评分界面 -->
+        <activity
+            android:name=".activity.GradeActiviy"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 地图界面 -->
+        <activity
+            android:name=".activity.BaiDuMapActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 签到界面 -->
+        <activity
+            android:name=".activity.SignInActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 历史课程界面 -->
+        <activity
+            android:name=".activity.HistoryClassActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <!-- 服务协议界面 -->
+        <activity
+            android:name=".activity.RuleActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!-- Push service 运行需要的权限 -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+        <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+        <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push结束 -->
+        <!-- 此处Receiver名字修改为当前包名路径 -->
+        <receiver android:name=".Receiver.PushTestReceiver">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind、setTags等method的返回结果 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 接收通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zHB37ZkCDuB6x9lH4GPuhd4fA2tQjCO3" />
+
+        <!-- 测试key  zHB37ZkCDuB6x9lH4GPuhd4fA2tQjCO3 -->
+        <!-- 正式key  7wtbq3jXUYCOCig7BGsuGtRhkoi8jI4V -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="zHB37ZkCDuB6x9lH4GPuhd4fA2tQjCO3" />
+
+        <activity
+            android:name=".activity.change.ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color><!--3F51B5-->
+    <color name="colorPrimaryDark">#303F9F</color><!--303F9F-->
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background">#EDEDED</color>	<!-- 页面背景底色 -->
+    <color name="background_content">#ffffff</color>	<!-- 数据内容加载背景色 -->
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="black">#555555</color> <!-- 黑色 -->
+    <color name="gray">#999999</color> <!-- 灰色 -->
+    <color name="gray_hint">#999999</color>	<!-- 控件hint(默认提示字体)颜色 -->
+    <color name="main_text_gray">#bbbbbb</color>	<!-- 控件hint(默认提示字体)颜色 -->
+    <color name="sub_text_gray">#cfcfcf</color>	<!-- 控件hint(默认提示字体)颜色 -->
+    <color name="green">#7EB732</color> <!-- 绿色 -->
+    <color name="blue">#0066ff</color> <!-- 蓝色 -->
+    <color name="red">#FE0000</color> <!-- 红色 -->
+    <color name="yellow">#fff6e3</color> <!-- 黄色 -->
+    <color name="pink">#ff6b7c</color>
+    <color name="yellow_text">#f59e19</color>
+    <color name="halving_line_horizontal">#dddddd</color>	<!-- 横向分割线颜色值 -->
+    <color name="halving_line_vertical">#cccccc</color>	<!-- 纵向分割线颜色值 -->
+    <color name="usered">#e4000b</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="my_but_bg_color">#4CB5D5</color>
+    <item name="transport" type="drawable">#00000000</item>
+    <color name="blue_tint">#00a0ea</color>
+    <color name="tab_bot_bg_color">#F8F8F8</color><!-- 导航背景颜色 -->
+    <color name="tab_home_main_bar_tabhome_color">#1959BC</color>
+    <color name="tab_home_main_bar_color">#457AC6</color>
+
+    <color name="app_bul_but_pass_color">#90B8F3</color><!-- 蓝色按钮点击后颜色 -->
+    <color name="app_bul_but_no_color">#457AC6</color><!-- 蓝色按钮未点击颜色 -->
+    <color name="app_while_but_pass_color">#e5e5e5</color><!-- 白色按钮点击后颜色 -->
+    <color name="app_while_but_no_color">#ffffff</color><!-- 白色按钮未点击颜色 -->
+    <!-- 开关 -->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+    <color name="app_mian_color_green">#32cd32</color><!-- app绿色主色调 -->
+    <color name="tabhome_text_color">#999999</color><!-- 主界面导航字体颜色 -->
+
+    <color name="syllabus_btn_bg_yellow">#F2BB18</color>
+    <color name="syllabus_btn_bg_blue">#1FAEEA</color>
+    <color name="syllabus_btn_bg_orange">#EF7D1D</color>
+    <color name="syllabus_btn_bg_green">#81B932</color>
+    <color name="syllabus_btn_bg_red">#FF575F</color>
+    <color name="syllabus_btn_bg_gary">#B4B4B4</color>
+
+    <color name="masscontent_tv_bg_blue">#4A769C</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+
+    <color name="syllabus_btn_bg_pink">#f37676</color>
+    <color name="grade_tv_no_bg">#C1BDBE</color> <!--评分页面textview灰色背景-->
+    <color name="grade_tv_pass_bg">#75C504</color> <!--评分页面textview绿色背景-->
+    <color name="province_line_border">#D0D0D0</color>
+</resources>

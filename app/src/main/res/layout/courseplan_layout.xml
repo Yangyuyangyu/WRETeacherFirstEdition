@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/courseplan_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@color/translucent_background"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:id="@+id/courseplan_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="课程规划"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <WebView
+            android:id="@+id/courseplan_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+    </LinearLayout>
+</LinearLayout>

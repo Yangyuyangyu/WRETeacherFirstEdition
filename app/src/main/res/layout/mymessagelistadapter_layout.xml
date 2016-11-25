@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.wr_education.view.RoundImageView
+        android:id="@+id/mymessageadapter_img_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/xiaoxi"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/mymessageadapter_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统消息"
+        android:textSize="@dimen/small_size"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/mymessageadapter_tv_time"
+        android:layout_alignTop="@+id/mymessageadapter_img_head"
+        android:layout_toRightOf="@+id/mymessageadapter_img_head"/>
+
+    <TextView
+        android:id="@+id/mymessageadapter_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="您有一节课即将开始安防监控哈市的科技发达和骄傲开发环节多撒谎发几款"
+        android:textSize="@dimen/small_size"
+        android:textColor="@color/black"
+        android:layout_below="@+id/mymessageadapter_tv_name"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignLeft="@+id/mymessageadapter_tv_name"
+        />
+
+    <TextView
+        android:id="@+id/mymessageadapter_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-12-06 19:00"
+        android:textSize="@dimen/small_size_more"
+        android:textColor="@color/gray_hint"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/mymessageadapter_tv_name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

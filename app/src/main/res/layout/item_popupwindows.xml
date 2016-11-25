@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/with_yx_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/paizhao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/paizhao_but_greenbg_1"
+                android:minHeight="40dp"
+                android:layout_centerInParent="true"
+                android:text="拍照"
+                android:textColor="@drawable/paizhao_bul_text"
+                android:textSize="@dimen/small_size"
+                 />
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/paizhao"
+                    android:background="@color/halving_line_horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/select_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/paizhao_but_greenbg"
+                android:minHeight="40dp"
+                android:text="从相册中选择"
+                android:textColor="@drawable/paizhao_bul_text"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/small_size"
+                 />
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/select_photo"
+                    android:background="@color/halving_line_horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/paizhao_red_but"
+                android:minHeight="40dp"
+                android:paddingTop="10dp"
+                android:text="取消"
+                android:textColor="@drawable/paizhao_red_tetx"
+                android:textSize="@dimen/small_size"
+                />
+
+        </RelativeLayout>
+       
+    </LinearLayout>
+
+</RelativeLayout>

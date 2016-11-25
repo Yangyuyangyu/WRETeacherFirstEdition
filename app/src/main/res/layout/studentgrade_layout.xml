@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green"
+        >
+
+        <ImageButton
+            android:id="@+id/studentgrade_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@color/translucent_background"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:id="@+id/studentgrade_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/studentgrade_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+           <!-- <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/studentgrade_btn_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:text="确定"
+                    android:textSize="@dimen/medium_size"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_login_button_background"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+                <Button
+                    android:id="@+id/studentgrade_btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:text="取消"
+                    android:textSize="@dimen/medium_size"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/syllabus_btn_bg_green"
+                    android:background="@drawable/shape_register_button_background"
+                    />
+            </RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

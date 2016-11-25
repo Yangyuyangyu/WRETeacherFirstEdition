@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <com.wr_education.view.RoundImageView
+            android:id="@+id/homepageonelist_image_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/homepageonelist_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_size"
+            android:layout_alignTop="@+id/homepageonelist_image_head"
+            android:layout_toRightOf="@+id/homepageonelist_image_head"
+            android:layout_toEndOf="@+id/homepageonelist_image_head"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/homepageonelist_image_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/homepageonelist_image_head"
+            android:layout_alignLeft="@+id/homepageonelist_tv_name"
+            android:layout_alignStart="@+id/homepageonelist_tv_name"
+             />
+
+        <TextView
+            android:id="@+id/homepageonelist_tv_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/small_size"
+            android:layout_alignBottom="@+id/homepageonelist_image_head"
+            android:layout_toRightOf="@+id/homepageonelist_image_evaluate"
+            android:layout_toEndOf="@+id/homepageonelist_image_evaluate"
+            />
+
+        <TextView
+            android:id="@+id/homepageonelist_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/small_size"
+            android:layout_alignTop="@+id/homepageonelist_tv_evaluate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/homepageonelist_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size"
+            android:layout_below="@+id/homepageonelist_image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

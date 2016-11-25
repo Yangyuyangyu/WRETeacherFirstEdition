@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recylerview_absentteacher_item"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <CheckBox
+        android:id="@+id/recylerview_absentteacher_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/recylerview_absentteacher_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="张三"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_size"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/recylerview_absentteacher_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15982407336"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_size"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

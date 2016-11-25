@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.wr_education"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile files('libs/pushservice-4.6.2.39.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+}

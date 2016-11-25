@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/organizationhome_rl_waititle"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/shetuan_bg"
+        >
+
+        <ImageButton
+            android:id="@+id/organizationhome_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/translucent_background"
+            android:src="@drawable/app_w_back_but_selector" />
+        <!--  <RelativeLayout
+              android:id="@+id/organizationhome_rl_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/translucent_background">
+
+
+              <TextView
+                  android:id="@+id/organizationhome_tv_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/medium_size"
+                  android:minHeight="40dp"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  />
+        </RelativeLayout>-->
+
+        <com.wr_education.view.RoundImageView
+            android:id="@+id/organizationhome_img_head"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@mipmap/touxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            />
+        <TextView
+            android:id="@+id/organizationhome_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_size"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/organizationhome_img_head"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/organizationhome_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/organizationhome_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:textSize="@dimen/small_size"
+            android:text="申请加入"
+            android:textColor="@color/white"
+            android:background="@drawable/organization_btn_bg"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/organizationhome_rl_waititle"
+        android:layout_above="@+id/organizationhome_rl_bottom"
+        android:background="@color/background_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/organizationhome_rl_addsbaner"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#fff"
+            android:visibility="visible" >
+
+            <com.wr_education.view.TabLineIndicator
+                android:id="@+id/organizationhome_maintype"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:fillViewport="false" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/halving_line_horizontal"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/organizationhome_vPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@color/background_content"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+</RelativeLayout>

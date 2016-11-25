@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green"
+        >
+
+        <ImageButton
+            android:id="@+id/commitreport_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/translucent_background"
+            android:padding="10dp"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:id="@+id/commitreport_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/commitreport_tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="提交"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commitreport_tv_time"
+                style="@style/Textview_Medium_Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2015.12.30 10:00~12:00" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Textview_Medium_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="课堂内容"
+                    android:minHeight="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/background" />
+
+                <!--Lorem ipsum dolor sit amet,consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commode.-->
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/commitreport_et_classcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:lines="4"
+                    android:hint="输入课程内容"
+                    android:textColorHint="@color/gray_hint"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Textview_Medium_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="上课情况及问题"
+                    android:minHeight="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/background" />
+
+                <EditText
+                    android:id="@+id/commitreport_et_issue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:lines="4"
+                    android:hint="输入上课情况及问题"
+                    android:textColorHint="@color/gray_hint"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Textview_Medium_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="建议办法"
+                    android:minHeight="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/background" />
+
+                <EditText
+                    android:id="@+id/commitreport_tv_solution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:lines="4"
+                    android:hint="输入建议办法"
+                    android:textColorHint="@color/gray_hint"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Textview_Medium_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:minHeight="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="课后作业"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_size"/>
+
+                <com.wr_education.view.UISwitchButton
+                    xmlns:switch="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/commitreport_btn_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    switch:bmHeight="70dp"
+                    switch:bmWidth="50dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/commitreport_ll_homework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/commitreport_tv_homeworltime"-->
+                    <!--style="@style/Textview_Medium_Size"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="2015.12.30 10:00~12:00" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="请输入作业内容"
+                        style="@style/Textview_Medium_Size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/background" />
+
+                    <EditText
+                        android:id="@+id/commitreport_et_homework"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_size"
+                        android:paddingTop="10dp"
+                        android:textColorHint="@color/gray_hint"
+                        android:gravity="left"
+                        android:hint="在这里输入课后作业"
+                        android:background="@null"/>
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/commitreport_img_updata"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:background="@mipmap/commitpic"-->
+                        <!--/>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <com.wr_education.view.NoScrollGridView
+                            android:id="@+id/commitreport_gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:horizontalSpacing="5dp"
+                            android:minHeight="200dp"
+                            android:numColumns="3"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:verticalSpacing="5dp" >
+                        </com.wr_education.view.NoScrollGridView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

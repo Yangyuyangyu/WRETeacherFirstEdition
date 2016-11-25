@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/homepagetwo_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_while_tv_bg"
+        android:layout_marginBottom="5dp"
+        android:padding="20dp">
+    <ImageView
+        android:id="@+id/homepagetwolist_image_head"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        />
+        <TextView
+            android:id="@+id/homepagetwolist_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_size"
+            android:layout_alignTop="@+id/homepagetwolist_image_head"
+            android:layout_toRightOf="@+id/homepagetwolist_image_head"
+            android:layout_toEndOf="@+id/homepagetwolist_image_head"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/homepagetwolist_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size"
+            android:layout_alignBottom="@+id/homepagetwolist_image_head"
+            android:layout_alignLeft="@+id/homepagetwolist_tv_name"
+            android:layout_alignStart="@+id/homepagetwolist_tv_name" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+    android:id="@+id/title_top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_bar"
+    android:background="#32cd32"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="选择照片"
+        android:textColor="@color/bottom_text_color_normal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/select_al_quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/select_al_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="相册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_size" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/title_bot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#32cd32"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/select_al_yulian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size"
+            android:clickable="false"
+            android:text="预览" />
+
+        <TextView
+            android:id="@+id/select_al_wancheng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size"
+            android:clickable="false"
+            android:text="完成（0/9）" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/photo_grivew"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/title_top"
+        android:layout_above="@id/title_bot"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        >
+    </GridView>
+
+    <TextView
+        android:id="@+id/select_nophoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:textSize="@dimen/small_size"
+        android:textColor="@color/black"
+         android:gravity="center"
+        android:text="相册中没有图片哦亲~ 快去拍拍拍" />
+
+</RelativeLayout>

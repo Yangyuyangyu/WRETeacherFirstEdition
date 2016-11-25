@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/organization_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/syllabus_btn_bg_green">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+            <RelativeLayout
+                android:id="@+id/organization_rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@color/syllabus_btn_bg_green"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构"
+                    android:textSize="@dimen/medium_size"
+                    android:textColor="@color/white"
+                    android:minHeight="40dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/organization_tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加"
+                    android:padding="5dp"
+                    android:textSize="@dimen/small_size"
+                    android:textColor="@drawable/right_tv_bg"
+                    android:minHeight="40dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/organization_ll_circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/organization_rl_title"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ProgressBar
+                    android:id="@+id/pb_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateDrawable="@drawable/progress_anim"
+                    android:indeterminateOnly="true" />
+
+                <TextView
+                    android:id="@+id/tx_progress_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="加载中..."
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/organization_rl_title"
+                android:id="@+id/organization_rl_noadd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="您还没有加入任何机构哦！请点击右上角“添加”按钮"
+                    android:textColor="@color/gray_hint"
+                    android:gravity="center"
+                    android:textSize="@dimen/small_size"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/organization_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/organization_rl_title"
+                android:layout_marginTop="5dp"
+                android:background="@color/background"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

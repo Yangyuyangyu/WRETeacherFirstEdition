@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/syllabus_btn_bg_green"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/abasentteacher_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@color/translucent_background"
+            android:src="@drawable/app_w_back_but_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="申请代课"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/abasentteacher_tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="提交"
+            android:textColor="@drawable/right_tv_bg"
+            android:textSize="@dimen/small_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.wr_education.view.ClearEditText
+                    android:id="@+id/absentteacher_et_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:background="@drawable/organizationadd_btn_bg"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/small_size"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:maxLength="10"
+                    android:hint="姓名搜索"
+                    android:textColorHint="@color/gray_hint"
+                    android:layout_centerVertical="true"
+                    />
+                <com.wr_education.view.ClearEditText
+                    android:id="@+id/absentteacher_et_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:background="@drawable/organizationadd_btn_bg"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/small_size"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:maxLength="11"
+                    android:hint="手机号搜索"
+                    android:phoneNumber="true"
+                    android:textColorHint="@color/gray_hint"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:id="@+id/absentteacher_btn_find"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="搜索"
+                    android:textColor="@drawable/right_btn_bg"
+                    android:textSize="@dimen/small_size"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/halving_line_vertical"
+                />
+            <com.wr_education.view.MyListView
+                android:id="@+id/absentteacher_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none"
+                />
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="horizontal"
+                  android:background="@color/white">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/Textview_Medium_Size"
+                      android:layout_marginLeft="10dp"
+                      android:layout_centerVertical="true"
+                      android:text="设置代课账号"/>
+
+                  <EditText
+                      android:id="@+id/abasentteacher_et_username"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="40dp"
+                      android:background="@null"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/medium_size"
+                      android:layout_centerVertical="true"
+                      android:textColorHint="@color/gray_hint"
+                      android:hint="输入代课账号"
+                      android:paddingLeft="5dp"
+                      android:maxLength="20"
+                      android:singleLine="true"
+                      android:layout_marginRight="10dp"
+                      />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="horizontal"
+                  android:background="@color/white">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/Textview_Medium_Size"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="10dp"
+                      android:text="设置代课密码"/>
+
+                  <EditText
+                      android:id="@+id/abasentteacher_et_passworld"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="40dp"
+                      android:background="@null"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/medium_size"
+                      android:textColorHint="@color/gray_hint"
+                      android:layout_centerVertical="true"
+                      android:hint="输入代课密码"
+                      android:paddingLeft="5dp"
+                      android:maxLength="20"
+                      android:singleLine="true"
+                      android:layout_marginRight="10dp"
+                      android:inputType="textPassword"
+                      />
+              </LinearLayout>
+          -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/abasentteacher_rl_reson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注或者原因"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/medium_size"
+                        android:minHeight="40dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/abasentteacher_tv_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="病假"
+                        android:textColor="@color/black"
+                        android:minHeight="40dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/medium_size"
+                        android:layout_toLeftOf="@+id/abasentteacher_img_reason"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/abasentteacher_img_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/xljt"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <EditText
+                    android:id="@+id/abasentteacher_et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:minHeight="100dp"
+                    android:background="@null"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/small_size"
+                    android:textColor="@color/black"
+                    android:hint="这里输入原因"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

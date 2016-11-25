@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/callnamegridview_rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/change_border">
+
+    <com.wr_education.view.RoundImageView
+        android:id="@+id/callnamegridview_img_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/callnamegridview_tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callnamegridview_img_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/callnamegridview_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callnamegridview_tv_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_size" />
+</RelativeLayout>

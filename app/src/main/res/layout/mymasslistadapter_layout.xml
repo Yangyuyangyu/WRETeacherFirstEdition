@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/mymasslistadapter_rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/app_while_tv_bg"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/mymasslistadapter_image_head"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/mymasslistadapter_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mymasslistadapter_image_head"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mymasslistadapter_image_head"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_size" />
+
+
+        <TextView
+            android:id="@+id/mymasslistadapter_tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/small_size"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/mymasslistadapter_tv_name"
+            />
+
+
+        <TextView
+            android:id="@+id/mymasslistadapter_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/small_size"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/mymasslistadapter_image_head"
+            android:layout_alignLeft="@+id/mymasslistadapter_tv_teacher"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+        android:layout_below="@+id/mymasslistadapter_rl"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>
